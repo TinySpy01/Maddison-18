@@ -9,7 +9,8 @@ class Weapon:
         self.z = z
 
 
-
-Lance_missiles_antisurface = Weapon(40,30)
-Lance_missiles_anti_air = Weapon(50,40)
-Lance_torpilles = Weapon(15,20)
+class Antisurface(Weapon):
+    def __init__(self, ammunition: str, range: int, type:str,z):
+        super().__init__(ammunition,range)
+        super()._fire_at(z)
+        self.type = type
