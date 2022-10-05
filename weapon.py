@@ -4,13 +4,12 @@ class Weapon:
         self.range = range
 
     def _fire_at(self, x: int, y: int, z: int):
-        self.x = x
-        self.y = y
-        self.z = z
+        if self.ammunition==0 : print ("
+       
 
 
 class Antisurface(Weapon):
-    def __init__(self, ammunition: str, range: int, type:str,z):
+    def __init__(self, ammunition: int, range: int):
         super().__init__(ammunition,range)
-        super()._fire_at(z)
+        super()._fire_at()
         self.type = type
